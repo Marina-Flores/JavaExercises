@@ -42,7 +42,7 @@ public class Estudante {
 	public void calculaMedia(ArrayList<Estudante> estudantes, String matricula) {
 		double soma = 0;
 		for(Estudante e : estudantes) {
-			if(matricula == e.Matricula) {
+			if(e.Matricula.equals(matricula)) {
 				for(int i = 0; i < e.Notas.length; i++) {
 					soma+= e.Notas[i];
 				}				

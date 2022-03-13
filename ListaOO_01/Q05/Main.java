@@ -10,10 +10,10 @@ public class Main {
 		System.out.println("+-------------------------------------------+");
 		System.out.println("|             Menu de Opções                |");
 		System.out.println("+-------------------------------------------+");
-		System.out.println("| 1 - Cadastrar estudante           		|");
-		System.out.println("| 2 - Obter nome do estudante            	|");
-		System.out.println("| 3 - Calcular média                     	|");
-		System.out.println("| 0 - Sair					                |");
+		System.out.println("         1 - Cadastrar estudante             ");
+		System.out.println("         2 - Obter nome do estudante         ");
+		System.out.println("         3 - Calcular média                  ");
+		System.out.println("         0 - Sair					         ");
 		System.out.println("+-------------------------------------------+");
 	}
 	
@@ -38,7 +38,7 @@ public class Main {
 	
 	private static String obterNome(ArrayList<Estudante> estudantes, String matricula) {
 		for(Estudante e : estudantes) {
-			if(matricula == "2016") {
+			if(e.getMatricula().equals(matricula)) {
 				return e.getNome(); 
 			}
 		}
